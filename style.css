@@ -1,0 +1,125 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
+
+body {
+  background-color: #A0BDCD;
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 32px;
+}
+
+h2 {
+  color: #F5678C;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: #F5678C;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+}
+
+#header {
+  display: sticky;
+  background-image: url("images/squid_game_doll_me.jpg");
+  height: 300px;
+  background-size: 100% 100%;
+}
+
+#header:hover {
+  background-image: url("images/squid_game_doll_me_full_lasers.jpg");
+}
+
+
+.scrolling {
+  display: flex;
+  overflow-x: auto;
+}
+
+.scrolling::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  /* background-color: white; */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("images/squid_game_players.jpg");
+  border: solid;
+  border-color: #F5678C;
+  border-radius: 15px;
+  margin: 30px;
+  padding: 10px 5px;
+  box-shadow: 5px 10px 5px 0px #D36598;
+  height: 300px;
+}
+
+.card:hover {
+  background-image: url("images/squid-game-doll.gif");
+  background-size: cover;
+}
+
+.inline-list > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.inline-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.green_button {
+  background-color: #0F7173;
+  color: white;
+  font-size: 24px;
+  border-radius: 15px;
+  padding: 10px;
+  display: inline-block
+}
+
+.fab:hover {
+  color: #f51450;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    /* width: 700px; */
+    width: 60%;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 70%;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 80%;
+  }
+}
